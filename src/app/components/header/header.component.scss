@@ -1,0 +1,69 @@
+// .header-mat-toolbar {
+//     background: #2188D9; // assuming a white background as per the images
+//     color: #ffffff; // for the text color
+
+//     .header-content {
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-between;
+//       align-items: center;
+
+//       .header-title {
+//         font-size: 24px; // Adjust the font size as per your design
+//       }
+
+//       .header-nav {
+//         a {
+//           color: #ffffff; // Adjust the link color as per your design
+//           margin-right: 20px; // Adjust spacing as per your design
+//         }
+//       }
+//     }
+//   }
+
+
+.header-mat-toolbar {
+    background: #2188D9; // or the color that matches your design
+
+    .header-content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+
+        .header-title {
+            font-size: 20px; // or the size that matches your design
+            color: #FFFFFF;
+        }
+
+        .header-nav {
+            display: flex;
+
+            a {
+                display: flex;
+                align-items: center;
+                padding: 0 10px; // or the padding that matches your design
+                color: #FFFFFF; // or the color that matches your design
+
+                mat-icon {
+                    margin-right: 5px; // or the spacing that matches your design
+                }
+            }
+
+            .right-icons {
+                display: flex;
+                padding-left: 150px;
+
+                // Target the last two icons with a class or :last-child pseudo-class
+                a:last-child {
+                    margin-left: 0px; // Remove any margin to the left of the last icon
+                }
+
+                a:not(:last-child) {
+                    margin-right: 0; // Remove any margin to the right of the second to last icon
+                }
+
+            }
+        }
+    }
+}
